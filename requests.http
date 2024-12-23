@@ -1,0 +1,52 @@
+# Retrieve all users
+GET http://localhost:5274/users
+Authorization: valid_token
+
+###
+
+# Retrieve a specific user by ID
+GET http://localhost:5274/users/1
+Authorization: Bearer valid_token
+
+
+###
+
+# Add a new user
+POST http://localhost:5274/users
+Authorization: Bearer valid_token
+Content-Type: application/json
+
+{
+    "Name": "Diana",
+    "Age": 151
+}
+
+###
+
+POST http://localhost:5274/users
+Authorization: Bearer valid_token
+Content-Type: application/json
+
+{
+    "Name": "",
+    "Age": 25
+}
+
+###
+
+# Update an existing user
+PUT http://localhost:5274/users/1
+Authorization: Bearer valid_token
+Content-Type: application/json
+
+{
+    "Name": "12",
+    "Age": 1
+}
+
+###
+
+# Delete a user by ID
+DELETE http://localhost:5274/users/1
+Authorization: valid_token
+
