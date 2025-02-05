@@ -31,7 +31,6 @@ This is a simple User Management API built with ASP.NET Core. It demonstrates CR
    git clone https://github.com/yourusername/your-repo-name.git
    cd your-repo-name
    ```
-2. Open your browser and navigate to ```http://localhost:5000/swagger``` to view the API documentation.
 
 ## API Endpoints
 
